@@ -28,9 +28,9 @@
 	ftp_push: {
 		your_target: {
 			options: {
-				username: 'superSam',
-				password: 'BTR45cll!',
-				host: 'ftp.sampepper.net',
+				username: '',
+				password: '!',
+				host: 'ftp.net',
 				dest: '/friday_funnies',
 				port: 21,
 				debug: true,
