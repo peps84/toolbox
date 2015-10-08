@@ -14,7 +14,7 @@
 			fileNameFormat: '${hash}.${ext}',
 			renameFiles: true
 		},
-		prod: {
+		dist: {
 			src: [
 				// WARNING: These files will be renamed!
 				'*.{png,jpg,gif}'
@@ -31,7 +31,7 @@
 				username: '',
 				password: '!',
 				host: 'ftp.net',
-				dest: '/friday_funnies',
+				dest: '/thumbs',
 				port: 21,
 				debug: true,
 			},
@@ -50,7 +50,7 @@
 
 	/////////////////////////////////////////// Default builds the ad from local tamplates and updates attributes from JSON files
 	grunt.registerTask('default', [
-		'hashres:prod',
+		'hashres:dist',
 		'ftp_push'
 	]);
 };
